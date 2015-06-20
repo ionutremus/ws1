@@ -4,13 +4,13 @@ import net.thucydides.core.annotations.Step;
 
 import java.util.Random;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import test.model.Pet;
 import static net.serenitybdd.rest.SerenityRest.rest;
 import static org.hamcrest.Matchers.equalTo;
 
-/**
- * Created by john on 3/06/2015.
- */
+
 public class PetStoreSteps {
 
     Pet pet;
@@ -19,6 +19,19 @@ public class PetStoreSteps {
     public void when_i_add_the_pet_to_the_store(Pet pet) {
         this.pet = pet;
         int id = Math.abs(new Random().nextInt());
+
+//        pet.setId(id);
+//        ObjectMapper mapper = new ObjectMapper();
+//        String body = "";
+//        try
+//        {
+//            body = mapper.writeValueAsString(pet);
+//        }
+//        catch (Exception e)
+//        {
+//            e.printStackTrace();
+//        }
+
         String jsonPet = "{\"id\": " + id + " , \"name\": \""
                 + pet.getName() + "\", \"photoUrls\": [], \"status\": \""
                 + pet.getStatus() + "\"}";

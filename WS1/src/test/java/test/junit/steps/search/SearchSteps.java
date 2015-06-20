@@ -38,6 +38,7 @@ public class SearchSteps extends ScenarioSteps {
 		}
 	}
 
+	@Step
 	public void openHomePage() {
 		 search.open();		
 	}

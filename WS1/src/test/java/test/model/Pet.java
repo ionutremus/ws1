@@ -5,8 +5,9 @@ package test.model;
  */
 public class Pet {
     private String name;
-    private String status;
+	private String status;
     private int id;
+    private String[] photoUrls;
 
     public Pet(String status, String name) {
         this.status = status;
@@ -21,6 +22,14 @@ public class Pet {
         return name;
     }
 
+    public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	
     public void setId(int id) {
         this.id = id;
     }
@@ -28,4 +37,12 @@ public class Pet {
     public int getId() {
         return id;
     }
+
+	public String[] getPhotoUrls() {
+		return photoUrls;
+	}
+
+	public void setPhotoUrls(String[] photoUrls) {
+		this.photoUrls = photoUrls;
+	}
 }

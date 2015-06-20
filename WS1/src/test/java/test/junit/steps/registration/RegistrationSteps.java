@@ -21,10 +21,12 @@ public class RegistrationSteps  extends ScenarioSteps {
 		
 	}
 
+	@Step
 	public void clickRegister() {
 		user.clickOnRegisterButton();
 	}
 
+	@Step
 	public void verifyIfRegistrationIsCorrect() {
 		assertEquals(user.getWelcomeText(),"John Doe, welcome to your new IMDb account!");
 	}
