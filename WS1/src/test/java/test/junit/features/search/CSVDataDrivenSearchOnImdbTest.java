@@ -27,7 +27,7 @@ import net.thucydides.junit.annotations.UseTestDataFrom;
 
 })
 @RunWith(SerenityParameterizedRunner.class)
-@Concurrent
+
 @UseTestDataFrom(value="src/test/resources/testData/data.csv")
 public class CSVDataDrivenSearchOnImdbTest {
     @Managed
