@@ -1,0 +1,21 @@
+<acceptance-test-run title="Tegister to imdb" name="tegisterToImdb" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="22619" timestamp="2015-06-20T04:17:32.695+03:00">
+  <user-story id="test.junit.features.registration.RegiterToImdbTest" name="Regiter to imdb test" path="test.junit.features.registration"/>
+  <tags>
+    <tag name="registration" type="component"/>
+    <tag name="high" type="priority"/>
+    <tag name="Regiter to imdb test" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="8105">
+    <screenshots>
+      <screenshot image="4549ba7ee801be1072e5511769ca7dc2_NONE.png"/>
+      <screenshot image="878503e3822047a40352c32b9910a46f_NONE.png"/>
+    </screenshots>
+    <description>Navigate to registration page</description>
+  </test-step>
+  <test-step result="SUCCESS" duration="2231">
+    <screenshots>
+      <screenshot image="85ea99637fca57e107d8fd435a2e446a_NONE.png"/>
+    </screenshots>
+    <description>Fill in all the fields</description>
+  </test-step>
+</acceptance-test-run>

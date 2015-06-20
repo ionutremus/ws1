@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Search by keyword" skipped="0" tests="1" time="26.93" timestamp="2015-06-171 04:45:45"><testcase name="Search for movies by keyword"><failure message="&#10;Expecting:&#10; &lt;&quot;Act Super Naturally&quot;&gt;&#10;to contain:&#10; &lt;&quot;supernatural&quot;&gt;&#10; (ignoring case)" type="java.lang.AssertionError">
+Expecting:
+ &lt;"Act Super Naturally"&gt;
+to contain:
+ &lt;"supernatural"&gt;
+ (ignoring case)</failure><system-err>
+Expecting:
+ &lt;"Act Super Naturally"&gt;
+to contain:
+ &lt;"supernatural"&gt;
+ (ignoring case)&#13;
+test.junit.steps.search.SearchSteps.verifyIfSearchResultsContain(SearchSteps.java:37)&#13;
+test.cucumber.steps.SearchForKeywordScenarioSteps.verifyIfSearchResultsContain(SearchForKeywordScenarioSteps.java:27)&#13;
+✽.Then I should see only movies related to 'supernatural'(src/test/resources/features/search/searchByKeyword.feature:9)&#13;
+</system-err></testcase></testsuite>

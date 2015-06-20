@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="test.junit.features.search.SearchOnImdbTest" skipped="0" tests="1" time="18.63" timestamp="2015-06-171 03:24:57"><testcase classname="test.junit.features.search.SearchOnImdbTest" name="Search by keyword"><failure message="&#10;Expecting:&#10; &lt;&quot;Act Super Naturally&quot;&gt;&#10;to contain:&#10; &lt;&quot;supernatural&quot;&gt;&#10; (ignoring case)" type="java.lang.AssertionError">
+Expecting:
+ &lt;"Act Super Naturally"&gt;
+to contain:
+ &lt;"supernatural"&gt;
+ (ignoring case)</failure><system-err>
+Expecting:
+ &lt;"Act Super Naturally"&gt;
+to contain:
+ &lt;"supernatural"&gt;
+ (ignoring case)&#13;
+test.junit.steps.search.SearchSteps.verifyIfSearchResultsContain(SearchSteps.java:36)&#13;
+test.junit.features.search.SearchOnImdbTest.searchByKeyword(SearchOnImdbTest.java:42)&#13;
+org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)&#13;
+org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)&#13;
+org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)&#13;
+</system-err></testcase></testsuite>

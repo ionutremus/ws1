@@ -1,0 +1,49 @@
+<acceptance-test-run title="Search for movies by keyword" name="Search for movies by keyword" description="" steps="3" successful="2" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="26928" timestamp="2015-06-20T04:45:45.152+03:00">
+  <user-story id="search-by-keyword" name="Search by keyword" path="src/test/resources/features/search/searchByKeyword.feature"/>
+  <tags>
+    <tag name="Search by keyword" type="feature"/>
+    <tag name="Search/Search by keyword" type="story"/>
+  </tags>
+  <test-step result="SUCCESS" duration="15568">
+    <screenshots>
+      <screenshot image="819ba6aaa6fd178ca00abc09d530eb03_NONE.png"/>
+    </screenshots>
+    <description>Given I want to see supernatural</description>
+  </test-step>
+  <test-group name="When I search for &apos;supernatural&apos;" result="SUCCESS">
+    <screenshots>
+      <screenshot image="53ab7eaba56199a224101262f0e51d2f_NONE.png"/>
+    </screenshots>
+    <test-step result="SUCCESS" duration="5894">
+      <screenshots>
+        <screenshot image="53ab7eaba56199a224101262f0e51d2f_NONE.png"/>
+        <screenshot image="da4a8f2e14bfc725805f69332f323372_NONE.png"/>
+      </screenshots>
+      <description>Search for keyword: &lt;span class=&apos;step-parameter&apos;&gt;supernatural&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="Then I should see only movies related to &apos;supernatural&apos;" result="FAILURE">
+    <screenshots>
+      <screenshot image="da4a8f2e14bfc725805f69332f323372_NONE.png"/>
+    </screenshots>
+    <test-step result="FAILURE" duration="1523">
+      <screenshots>
+        <screenshot image="da4a8f2e14bfc725805f69332f323372_NONE.png"/>
+      </screenshots>
+      <description>Verify if search results contain: &lt;span class=&apos;step-parameter&apos;&gt;supernatural&lt;/span&gt;</description>
+      <error>
+Expecting:
+ &lt;&quot;Act Super Naturally&quot;&gt;
+to contain:
+ &lt;&quot;supernatural&quot;&gt;
+ (ignoring case)</error>
+      <exception>java.lang.AssertionError:
+Expecting:
+ &lt;&quot;Act Super Naturally&quot;&gt;
+to contain:
+ &lt;&quot;supernatural&quot;&gt;
+ (ignoring case)&#xd;
+[test.junit.steps.search.SearchSteps.verifyIfSearchResultsContain(SearchSteps.java:37), test.cucumber.steps.SearchForKeywordScenarioSteps.verifyIfSearchResultsContain(SearchForKeywordScenarioSteps.java:27), org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50), org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)]</exception>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

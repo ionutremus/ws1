@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-bdd-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="bluetext">
+                <a href="index.html" class="bluetext">Home</a>
+                > <a
+                    href="a817c8400062d59483b5d1c2732116992306935fd9db91a61accf144ba919382.html">Search On Imdb Test</a>
+                > <a
+                    href="d8e2785baad82ee168c274a1adc709e40c804ea2a3edb6238ac3c717fe3a9c9d.html">Search by keyword </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 20-06-2015 03:25</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+    <!--
+    <div id="contentbody">
+        <div class="titlebar">
+        <div class="story-title">
+            <table width="1005">
+                <td width="50"><img class="story-outcome-icon" src="images/fail.png" width="25" height="25"/> </td>
+                <td width="%"><span class="test-case-title"><span
+                        class="failing-color">Search by keyword<span class="related-issue-title"></span></span></span>
+                </td>
+                <td width="100"><span class="test-case-duration"><span class="greentext">18.63s</span></span>
+                </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <a class="tagLink" href="cd1f3b7da948b8230f16345e12a9cf30996259c2b3da3b0b8cb97c5fe582aee0.html">Medium (priority)</a>
+                        <a class="tagLink" href="104e86778c61b4270a19fa6dd7f05671eb0be10515a3780f86ccead031b4bc17.html">Search (component)</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+-->
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-comments-o"></i>
+                                    <span class="story-header-title">Search On Imdb Test</span>
+                                    <span class="badge tag-badge">Story</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="8d8c8df85eb59d232cc87bf4999255127883a1514f226f29ed3182429112d905.html">Medium
+                                    (priority)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="52ef74aa4b7f6cb6c20ab6107525df481eb65de1c2bdff881709ce6c6a7db932.html">Search
+                                    (component)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><img class="story-outcome-icon"
+                                                            src="images/fail.png"/></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Search by keyword
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="bb9eaeb727ab2cb05a1dfdbeaa07d9f4_NONE.png" alt=""
+                     title="Search for keyword: &lt;span class='step-parameter'&gt;supernatural&lt;/span&gt;" width="1583"/>
+                <img src="2036ad6c4444f68b8727573d3e733822_NONE.png" alt=""
+                     title="Search for keyword: &lt;span class='step-parameter'&gt;supernatural&lt;/span&gt;" width="1583"/>
+                <img src="2036ad6c4444f68b8727573d3e733822_NONE.png" alt=""
+                     title="Verify if search result contains: &lt;span class='step-parameter'&gt;supernatural&lt;/span&gt;" width="1583"/>
+                <img src="2036ad6c4444f68b8727573d3e733822_NONE.png" alt="Expecting:"
+                     title="Verify if search results contain: &lt;span class='step-parameter'&gt;supernatural&lt;/span&gt;" width="1583"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.0.57</span>
+</div>
+</body>
+</html>
