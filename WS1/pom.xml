@@ -12,6 +12,22 @@
         <webdriver.driver>firefox</webdriver.driver>
     </properties>
 
+	    <!-- Define the Bintray repos for convenience -->
+    <repositories>
+        <repository>
+            <id>serenity</id>
+            <name>bintray</name>
+            <url>http://dl.bintray.com/serenity/maven</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>serenity</id>
+            <name>bintray-plugins</name>
+            <url>http://dl.bintray.com/serenity/maven</url>
+        </pluginRepository>
+    </pluginRepositories>
+	
     <dependencies>
         <dependency>
             <groupId>net.serenity-bdd</groupId>
@@ -36,8 +52,18 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <version>4.12</version>
             <scope>test</scope>
+        </dependency>
+		        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>1.8.6</version>
         </dependency>
                 <dependency>
             <groupId>net.serenity-bdd</groupId>
@@ -50,20 +76,41 @@
             <version>1.7.0</version>
             <scope>test</scope>
         </dependency>
+		        <dependency>
+            <groupId>com.googlecode.lambdaj</groupId>
+            <artifactId>lambdaj</artifactId>
+            <version>2.3.3</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
+			<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4</version>
+                <executions>
+                    <execution>
+                        <id>enforce</id>
+                        <configuration>
+                            <rules>
+                                <requireUpperBoundDeps/>
+                            </rules>
+                        </configuration>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <artifactId>maven-failsafe-plugin</artifactId>                  
                 <version>2.18</version>
                 <configuration>
                     <includes>
-                        <include>**/features/**/When*.java</include>                  
+                        <include>**/features/**/*Test.java</include>                  
                     </includes>
                     <systemProperties>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver> 
-                        <surefire.rerunFailingTestsCount>${surefire.rerunFailingTestsCount}</surefire.rerunFailingTestsCount>
-                        <surefire.rerunFailingTestsCount>${surefire.rerunFailingTestsCount}</surefire.rerunFailingTestsCount>
                     </systemProperties>
                 </configuration>
                 <executions>
@@ -77,8 +124,8 @@
             </plugin>
                     <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                
+				<version>3.2</version>
+                <configuration>                
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
@@ -87,13 +134,6 @@
                 <groupId>net.serenity-bdd.maven.plugins</groupId>       
                 <artifactId>serenity-maven-plugin</artifactId>
                 <version>${serenity.maven.version}</version>
-                <dependencies>
-                     <dependency>
-                        <groupId>net.serenity-bdd</groupId>
-                        <artifactId>core</artifactId>
-                        <version>${serenity.version}</version>
-                    </dependency>
-                </dependencies>
                 <executions>
                     <execution>
                         <id>serenity-reports</id>

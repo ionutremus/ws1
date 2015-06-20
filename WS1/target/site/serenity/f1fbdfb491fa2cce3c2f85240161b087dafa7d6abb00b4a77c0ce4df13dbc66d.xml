@@ -1,0 +1,19 @@
+<acceptance-test-run title="Should be able to add pets to a store" name="shouldBeAbleToAddPetsToAStore" steps="2" successful="2" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="3351" timestamp="2015-06-20T06:10:55.583+03:00">
+  <user-story id="test.junit.features.petstore.AddAPetToThePetStoreTest" name="Add a pet to the pet store test" path="test.junit.features.petstore"/>
+  <tags>
+    <tag name="Rest API" type="component"/>
+    <tag name="medium" type="priority"/>
+    <tag name="JUnit" type="special"/>
+    <tag name="Add a pet to the pet store test" type="story"/>
+  </tags>
+  <test-group name="When i add the pet to the store: &lt;span class=&apos;step-parameter&apos;&gt;test.model.Pet@3571b748&lt;/span&gt;" result="SUCCESS">
+    <test-step result="SUCCESS" duration="4">
+      <description>POST http://petstore.swagger.io/v2/pet</description>
+    </test-step>
+  </test-group>
+  <test-group name="The pets should be available" result="SUCCESS">
+    <test-step result="SUCCESS" duration="3">
+      <description>GET http://petstore.swagger.io/v2/pet/1317352630</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

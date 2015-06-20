@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="test.junit.features.petstore.AddAPetToThePetStoreTest" skipped="0" tests="1" time="3.35" timestamp="2015-06-171 06:10:55"><testcase classname="test.junit.features.petstore.AddAPetToThePetStoreTest" name="Should be able to add pets to a store"/></testsuite>

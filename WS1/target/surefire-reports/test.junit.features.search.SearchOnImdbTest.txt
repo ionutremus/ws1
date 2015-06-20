@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: test.junit.features.search.SearchOnImdbTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.097 sec <<< FAILURE!
+searchByKeyword(test.junit.features.search.SearchOnImdbTest)  Time elapsed: 13.332 sec  <<< FAILURE!
+java.lang.AssertionError
+	at test.junit.steps.search.SearchSteps.verifyIfSearchResultsContain(SearchSteps.java:37)
+	at test.junit.features.search.SearchOnImdbTest.searchByKeyword(SearchOnImdbTest.java:43)
+

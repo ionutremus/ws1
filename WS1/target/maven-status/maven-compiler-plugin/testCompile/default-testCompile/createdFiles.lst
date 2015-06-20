@@ -1,0 +1,11 @@
+test\pages\RegistrationPage.class
+test\pages\SearchPage.class
+test\junit\features\registration\RegiterToImdbTest.class
+test\cucumber\SearchByKeyword.class
+test\junit\features\search\SearchOnImdbTest.class
+test\junit\features\petstore\AddAPetToThePetStoreTest.class
+test\junit\steps\PetStoreSteps.class
+test\junit\steps\registration\RegistrationSteps.class
+test\model\Pet.class
+test\cucumber\steps\SearchForKeywordScenarioSteps.class
+test\junit\steps\search\SearchSteps.class

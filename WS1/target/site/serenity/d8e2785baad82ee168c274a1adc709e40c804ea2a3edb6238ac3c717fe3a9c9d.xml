@@ -1,26 +1,26 @@
-<acceptance-test-run title="Search by keyword" name="searchByKeyword" steps="3" successful="2" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="18634" timestamp="2015-06-20T03:24:57.034+03:00">
+<acceptance-test-run title="Search by keyword" name="searchByKeyword" steps="3" successful="2" failures="1" skipped="0" ignored="0" pending="0" annotated-result="FAILURE" result="FAILURE" duration="13329" timestamp="2015-06-20T06:11:22.070+03:00">
   <user-story id="test.junit.features.search.SearchOnImdbTest" name="Search on imdb test" path="test.junit.features.search"/>
   <tags>
     <tag name="search" type="component"/>
     <tag name="medium" type="priority"/>
+    <tag name="JUnit" type="special"/>
     <tag name="Search on imdb test" type="story"/>
   </tags>
-  <test-step result="SUCCESS" duration="6593">
+  <test-step result="SUCCESS" duration="3616">
     <screenshots>
-      <screenshot image="bb9eaeb727ab2cb05a1dfdbeaa07d9f4_NONE.png"/>
-      <screenshot image="2036ad6c4444f68b8727573d3e733822_NONE.png"/>
+      <screenshot image="31933c4d2df7604415bd27b2859fb450_NONE.png"/>
     </screenshots>
     <description>Search for keyword: &lt;span class=&apos;step-parameter&apos;&gt;supernatural&lt;/span&gt;</description>
   </test-step>
-  <test-step result="SUCCESS" duration="1261">
+  <test-step result="SUCCESS" duration="775">
     <screenshots>
-      <screenshot image="2036ad6c4444f68b8727573d3e733822_NONE.png"/>
+      <screenshot image="31933c4d2df7604415bd27b2859fb450_NONE.png"/>
     </screenshots>
     <description>Verify if search result contains: &lt;span class=&apos;step-parameter&apos;&gt;supernatural&lt;/span&gt;</description>
   </test-step>
-  <test-step result="FAILURE" duration="1670">
+  <test-step result="FAILURE" duration="1221">
     <screenshots>
-      <screenshot image="2036ad6c4444f68b8727573d3e733822_NONE.png"/>
+      <screenshot image="31933c4d2df7604415bd27b2859fb450_NONE.png"/>
     </screenshots>
     <description>Verify if search results contain: &lt;span class=&apos;step-parameter&apos;&gt;supernatural&lt;/span&gt;</description>
     <error>
@@ -35,6 +35,6 @@ Expecting:
 to contain:
  &lt;&quot;supernatural&quot;&gt;
  (ignoring case)&#xd;
-[test.junit.steps.search.SearchSteps.verifyIfSearchResultsContain(SearchSteps.java:36), test.junit.features.search.SearchOnImdbTest.searchByKeyword(SearchOnImdbTest.java:42), org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50), org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382), org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)]</exception>
+[test.junit.steps.search.SearchSteps.verifyIfSearchResultsContain(SearchSteps.java:37), test.junit.features.search.SearchOnImdbTest.searchByKeyword(SearchOnImdbTest.java:43)]</exception>
   </test-step>
 </acceptance-test-run>
