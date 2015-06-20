@@ -18,6 +18,7 @@ import net.thucydides.core.annotations.WithTag;
 import net.thucydides.core.annotations.WithTags;
 import net.thucydides.junit.annotations.Concurrent;
 import net.thucydides.junit.annotations.TestData;
+import net.thucydides.junit.annotations.UseTestDataFrom;
 
 @WithTags( {
     @WithTag(type="priority",name="medium"),
@@ -27,25 +28,21 @@ import net.thucydides.junit.annotations.TestData;
 })
 @RunWith(SerenityParameterizedRunner.class)
 @Concurrent
-public class DataDrivenSearchOnImdbTest {
+@UseTestDataFrom(value="src/test/resources/testData/data.csv")
+public class CSVDataDrivenSearchOnImdbTest {
     @Managed
     WebDriver driver;
 
     @Steps
     SearchSteps imdb;
-    
-    @TestData                                               
-    public static Collection<Object[]> testData(){
-        return Arrays.asList(new Object[][]{
-                {"supernatural"},
-                {"avatar"},
-                {"friends"}
-        });
-    }
 
-    private final String keyword;
+    private String keyword;
     
-    public DataDrivenSearchOnImdbTest(String keyword) {
+    public void setKeyword(String keyword) {
+		this.keyword = keyword;
+	}
+
+	public CSVDataDrivenSearchOnImdbTest(String keyword) {
         this.keyword = keyword;
     }
     
